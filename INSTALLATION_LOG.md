@@ -61,8 +61,17 @@ claude --version
 gh --version
 ```
 
+## Documented but Not Yet Implemented
+
+### Slash Commands
+- **Documentation:** [Slash Commands Guide](docs/SLASH_COMMANDS_GUIDE.md)
+- **Status:** Documented, awaiting implementation
+- **Trigger:** Will implement when we have 5+ tools
+- **Purpose:** Automate repetitive tasks like tool installation and verification
+
 ## Notes
 
 - All tools are installed globally for system-wide access
 - These tools enhance Claude Code's capabilities for development workflows
 - GitHub CLI requires authentication: run `gh auth login` after installation
+- See [Roadmap](README.md#roadmap) for planned additions

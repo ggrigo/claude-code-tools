@@ -120,6 +120,33 @@ When installing new tools for Claude Code:
    - Purpose and capabilities it adds
 3. Ask Claude Code to update this README with the new tool
 
+## Roadmap
+
+### ✅ Completed
+- CLAUDE.md configuration guide and templates
+- GitHub CLI integration
+- Claude Code CLI documentation
+
+### 📝 Documented (Not Yet Implemented)
+- **[Slash Commands](docs/SLASH_COMMANDS_GUIDE.md)** - Will be added when we have 5+ tools
+  - `/install` - Automated tool installation
+  - `/verify` - Check all tools are working
+  - `/add-tool` - Document new tools
+
+### 🔮 Future Additions
+- MCP (Model Context Protocol) servers
+- Git hooks for automation
+- VS Code settings.json configurations
+- Additional CLI tools based on community needs
+
+## Contributing
+
+When adding new tools:
+1. Install the tool and test it with Claude Code
+2. Document in INSTALLATION_LOG.md
+3. Update this README
+4. Share your experience!
+
 ## License
 
 MIT
