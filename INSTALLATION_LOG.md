@@ -11,16 +11,28 @@ To replicate this setup on a new machine:
 3. Verify installation with the verification commands
 4. Update this log with any new tools installed
 
-## Installation History
+## Setup History
 
-### 1. Claude Code CLI
+### 1. CLAUDE.md (Configuration File)
+- **Date:** 2025-08-26
+- **Type:** Configuration file (no installation required)
+- **Setup:** Create `CLAUDE.md` in project root
+- **Template:** Available in `templates/CLAUDE.md.template`
+- **Purpose:** Provides persistent project context to Claude Code:
+  - Project architecture and tech stack
+  - Coding standards and conventions
+  - Common commands and workflows
+  - Important notes and gotchas
+- **Documentation:** [Full Guide](docs/CLAUDE_MD_GUIDE.md)
+
+### 2. Claude Code CLI
 - **Date:** 2025-08-26
 - **Tool:** @anthropic-ai/claude-code
 - **Version:** Latest
 - **Installation Method:** `npm i -g @anthropic-ai/claude-code`
 - **Purpose:** Anthropic's official CLI for Claude
 
-### 2. GitHub CLI
+### 3. GitHub CLI
 - **Date:** 2025-08-26
 - **Tool:** gh (GitHub CLI)
 - **Version:** 2.78.0
