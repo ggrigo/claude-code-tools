@@ -8,8 +8,9 @@ A collection of tools and configurations that enhance Claude Code's capabilities
 
 ### Quick Start
 1. Create `CLAUDE.md` in your project root
-2. Copy our [template](templates/CLAUDE.md.template) and customize it
-3. That's it! Claude Code automatically loads it every session
+2. Copy our [project template](templates/CLAUDE.md.template) and customize it
+3. (Optional) Create `~/.claude/CLAUDE.md` for [global preferences](templates/CLAUDE.md.global.template)
+4. That's it! Claude Code automatically loads it every session
 
 **Why start with CLAUDE.md?**
 - Zero installation or configuration

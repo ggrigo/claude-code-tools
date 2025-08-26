@@ -167,19 +167,50 @@ CLAUDE.md becomes even more powerful when combined with:
 
 But start with just CLAUDE.md - it's the foundation everything else builds on.
 
+## Important Limitations & Considerations
+
+### Token Usage Impact
+- **Every character in CLAUDE.md counts against your context window** (200K tokens standard)
+- Larger files = higher costs and potentially slower responses
+- Keep under 500 lines for optimal performance
+- Each interaction includes the full CLAUDE.md content
+
+### Session Behavior
+- **No hot reloading** - Changes to CLAUDE.md require session restart
+- Content loads once at session start, not dynamically
+- Use `/clear` command or restart session to load updates
+- Claude won't detect mid-session file changes
+
+### Multiple Configuration Levels
+You can use CLAUDE.md at different levels:
+
+1. **Project Level** (`./CLAUDE.md`) - Project-specific configuration
+2. **User Global Level** (`~/.claude/CLAUDE.md`) - Personal preferences across all projects
+   - Useful for: personal coding style, preferred tools, common aliases
+   - Example: "Always use spaces not tabs", "Prefer async/await over promises"
+
+### What NOT to Include
+- Passwords, API keys, or secrets
+- Excessive documentation (wastes tokens)
+- Rapidly changing information
+- Binary data or encoded content
+
 ## Common Questions
 
 **Q: Can I have multiple CLAUDE.md files?**
-A: Claude primarily reads the root CLAUDE.md, though you can reference others.
+A: Yes, both project root and user global (`~/.claude/CLAUDE.md`). Project level takes precedence.
 
 **Q: How long should it be?**
-A: Start concise (1-2 pages), expand based on needs. Quality > quantity.
+A: Keep under 500 lines. Remember: every token costs money and context space.
 
 **Q: Should I commit it to git?**
-A: Yes! It's valuable documentation for your team too.
+A: Yes for project CLAUDE.md (team documentation). No for personal global config.
 
 **Q: Can it include sensitive info?**
-A: No, treat it as public documentation. Use .env for secrets.
+A: Never. Treat it as public documentation. Use .env for secrets.
+
+**Q: Why isn't Claude following my CLAUDE.md instructions?**
+A: Ensure you've restarted the session after changes. Consider adding explicit reminders in critical sections.
 
 ## Real Impact
 
