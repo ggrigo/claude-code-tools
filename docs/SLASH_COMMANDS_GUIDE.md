@@ -86,6 +86,57 @@ Update documentation for: $ARGUMENTS
 - Add examples if needed
 ```
 
+## Quality Assurance Commands
+
+These commands ensure code quality before handoffs, releases, or team transitions:
+
+#### `/handoff-ready` - Pre-Handoff Quality Check
+```markdown
+Prepare codebase for team handoff: $ARGUMENTS
+
+Quality checklist:
+1. Scan for bugs, security issues, performance problems
+2. Ensure README explains setup, features, architecture
+3. Verify logical file organization and naming
+4. Check for unnecessary packages, update outdated ones
+5. Create/update .env.example with required variables
+6. Add basic tests for core functionality
+7. Add explanatory comments for complex logic
+8. Remove debug code, console logs, commented blocks
+
+Generate handoff report with findings, fixes, and remaining TODOs.
+```
+
+#### `/audit` - Code Quality Audit
+```markdown
+Comprehensive audit of codebase: $ARGUMENTS
+
+Analysis:
+1. Scalability concerns - What breaks at scale?
+2. Security vulnerabilities - Critical issues
+3. Performance bottlenecks - Slow operations
+4. Technical debt - Shortcuts costing time later
+5. Integration points - APIs needing hardening
+6. Resource usage - Expensive operations
+
+Provide summary with impact assessment and priority fixes.
+```
+
+#### `/document` - Auto-Documentation
+```markdown
+Create comprehensive documentation: $ARGUMENTS
+
+Generate:
+1. Architecture overview - How components connect
+2. Setup instructions - Development environment
+3. API documentation - Endpoints and usage
+4. Key decisions - Technology choices explained
+5. Known limitations - Issues and workarounds
+6. Testing guide - How to run and write tests
+
+Update README.md and create ARCHITECTURE.md as needed.
+```
+
 ## Project-Specific Commands for claude-code-tools
 
 *Note: These are proposed commands for when we have more tools to manage*
@@ -116,6 +167,18 @@ Verify all documented tools are installed.
 - Identify missing tools
 - Suggest fixes
 ```
+
+## Example Commands
+
+Ready-to-use command examples are available in the `examples/commands/` directory:
+- [`handoff-ready.md`](../examples/commands/handoff-ready.md) - Pre-handoff quality check
+- [`audit.md`](../examples/commands/audit.md) - Comprehensive code audit
+- [`document.md`](../examples/commands/document.md) - Auto-documentation generator
+
+To use these:
+1. Copy the desired command file to `.claude/commands/` in your project
+2. Restart Claude Code session
+3. Use with `/handoff-ready`, `/audit`, or `/document`
 
 ## Best Practices
 

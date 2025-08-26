@@ -135,10 +135,11 @@ When installing new tools for Claude Code:
   - Pre-approves safe operations
   - Blocks dangerous commands
 
-- **[Slash Commands](docs/SLASH_COMMANDS_GUIDE.md)** - Will be added when we have 5+ tools
-  - `/install` - Automated tool installation
-  - `/verify` - Check all tools are working
-  - `/add-tool` - Document new tools
+- **[Slash Commands](docs/SLASH_COMMANDS_GUIDE.md)** - Custom automation commands
+  - Example commands available in [`examples/commands/`](examples/commands/)
+  - `/handoff-ready` - Pre-delivery quality check
+  - `/audit` - Code quality audit
+  - `/document` - Auto-documentation generator
 
 ### 🔮 Future Additions
 - MCP (Model Context Protocol) servers
