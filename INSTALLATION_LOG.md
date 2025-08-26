@@ -61,6 +61,15 @@ claude --version
 gh --version
 ```
 
+## Configuration Files (Ready to Use)
+
+### Settings.json
+- **Documentation:** [Settings.json Guide](docs/SETTINGS_JSON_GUIDE.md)
+- **Template:** [settings.json.template](templates/settings.json.template)
+- **Status:** Ready to implement
+- **Setup:** Create `.claude/settings.json` in project root
+- **Purpose:** Eliminate permission prompts by pre-configuring allowed/denied operations
+
 ## Documented but Not Yet Implemented
 
 ### Slash Commands

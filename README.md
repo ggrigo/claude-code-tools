@@ -43,6 +43,7 @@ Simply ask Claude Code to:
 | File | Purpose | Setup |
 |------|---------|-------|
 | **CLAUDE.md** | Project context and memory | Create in project root - [See guide](docs/CLAUDE_MD_GUIDE.md) |
+| **settings.json** | Permission management | Create at `.claude/settings.json` - [See guide](docs/SETTINGS_JSON_GUIDE.md) |
 
 ### 2. Globally Installed Tools
 
@@ -126,8 +127,14 @@ When installing new tools for Claude Code:
 - CLAUDE.md configuration guide and templates
 - GitHub CLI integration
 - Claude Code CLI documentation
+- Settings.json permission management guide
 
-### 📝 Documented (Not Yet Implemented)
+### 📝 Ready to Implement
+- **[Settings.json](docs/SETTINGS_JSON_GUIDE.md)** - Permission configuration ([template](templates/settings.json.template))
+  - Eliminates permission prompts
+  - Pre-approves safe operations
+  - Blocks dangerous commands
+
 - **[Slash Commands](docs/SLASH_COMMANDS_GUIDE.md)** - Will be added when we have 5+ tools
   - `/install` - Automated tool installation
   - `/verify` - Check all tools are working
@@ -136,7 +143,6 @@ When installing new tools for Claude Code:
 ### 🔮 Future Additions
 - MCP (Model Context Protocol) servers
 - Git hooks for automation
-- VS Code settings.json configurations
 - Additional CLI tools based on community needs
 
 ## Contributing
